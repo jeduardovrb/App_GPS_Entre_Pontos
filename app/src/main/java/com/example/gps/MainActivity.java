@@ -37,13 +37,19 @@ public class MainActivity extends AppCompatActivity {
     public void lerPontoA(View view) {
         p1 = this.getPonto();
         EditText edtPonto = findViewById(R.id.edtPontoA);
-        edtPonto.setText(p1.imprimir2());
+
+        if (p1 != null) {
+            edtPonto.setText(p1.imprimir2());
+        }
     }
 
     public void lerPontoB(View view) {
         p2 = this.getPonto();
         EditText edtPonto = findViewById(R.id.edtPontoB);
-        edtPonto.setText(p2.imprimir2());
+
+        if (p2 != null) {
+            edtPonto.setText(p2.imprimir2());
+        }
     }
 
     public Ponto getPonto() {
